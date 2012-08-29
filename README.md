@@ -7,3 +7,43 @@ Begrider comes in two different versions: The first one *(begrider-new)* uses at
 
 ##License
 Use it, abuse it and give me credit, if you want to.
+
+##Usage examples
+
+###The new version
+    <div class="container">
+    
+      <div class="grid">
+    
+        <div class="row">
+    
+          <div class="col-two"></div>
+    
+            <div class="col-eight">Your content here...</div>
+    
+          <div class="col-two"></div>
+    
+        </div>
+    
+      </div>
+    
+    </div>
+
+###The old version
+    <div class="container">
+    
+      <div class="grid">
+    
+        <div class="row">
+    
+          <div class="col-two"></div>
+    
+            <div class="col-eight">Your content here...</div>
+    
+          <div class="col-two last"></div>
+    
+        </div>
+    
+      </div>
+
+    </div>
