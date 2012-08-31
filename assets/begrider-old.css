@@ -260,10 +260,14 @@
   .row .column-one {
     margin-right: 0; /* Removes the margin-right/gutter. */
   }
+
 }
+
 /* iPhone/Smartphone (Landscape) */
 @media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  
   .container {
     width: 92.5%; /* Adjusts the width for a smaller/narrower screen. */
   }
+
 }
