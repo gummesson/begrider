@@ -108,11 +108,12 @@ h5, h6 {
   font-size: 1em;
 }
 
-/*----------------------------------------------------------------
-   Temporary fixes for displaying the columns more efficiently.
-----------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+   Temporary quick fixes for displaying the columns more efficiently.
+----------------------------------------------------------------------*/
 
-[class^="col-"] {
+[class^="column-"],
+[class^="unit-"] {
   background-color: #f660ab;
   text-align      : center;
   margin-bottom   : 10px;
@@ -122,12 +123,20 @@ h5, h6 {
   background-color: #fdfdfd;
 }
 
+.unit-bg {
+  background-color: #e550aa;
+}
+
 .text {
   text-align: left;
 }
 
   .text > p {
     margin-bottom: 1.5em;
+  }
+
+  .text > p:last-child {
+    margin-bottom: 0;
   }
 
 .margin {
