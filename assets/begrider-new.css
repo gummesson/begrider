@@ -2,9 +2,9 @@
     Begrider
 ==============*/
 
-/*---------------------------
-    Container (.container)
----------------------------*/
+/*--------------------------
+   Container (.container)
+--------------------------*/
 
 .container {
   /* Allows padding and borders on the system without breaking the grid and columns (+IE8). */
@@ -177,9 +177,9 @@
   width: 20%;
 }
 
-/*---------------------------
-    Media Queries (@media)
----------------------------*/
+/*--------------------------
+   Media Queries (@media)
+--------------------------*/
 
 /* Smaller Screens */
 @media screen and (max-width: 1024px) {
