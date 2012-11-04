@@ -63,15 +63,15 @@ table {
 --------*/
 
 body {
-  font                  : 112.5%/1.5 "Vollkorn", Georgia, Times, Serif; /* 18px */
+  font                  : 112.5%/1.5 "Tinos", Georgia, Times, Serif; /* 18px */
   -webkit-font-smoothing: antialiased;
-  background-color      : #fdfdfd;
-  color                 : #222;
+  background-color      : #fafafa;
+  color                 : #333;
 }
 
 ::selection, -moz-::selection {
-  color           :#fdfdfd;
-  background-color: #f660ab;
+  color           : #fafafa;
+  background-color: #ccc;
 }
 
 /*--------
@@ -84,8 +84,7 @@ h3,
 h4, 
 h5, 
 h6 {
-  font-family: "Cabin", Helvetica, Arial, Sans-serif;
-  font-weight: bold;
+  font-style: italic;
 }
 
 h1 {
@@ -114,17 +113,17 @@ h5, h6 {
 
 [class^="column-"],
 [class^="unit-"] {
-  background-color: #f660ab;
+  background-color: #ccc;
   text-align      : center;
   margin-bottom   : 10px;
 }
 
 .bg-fix {
-  background-color: #fdfdfd;
+  background-color: #fafafa;
 }
 
 .unit-bg {
-  background-color: #e550aa;
+  background-color: #aaa;
 }
 
 .text {
