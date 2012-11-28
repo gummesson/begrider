@@ -3,8 +3,6 @@
 
 Begrider comes in two different versions: The first one (begrider-new) uses attribute selectors to apply properties and values on all of the column and unit classes and to remove the gutter from the last column in the row. The second one (begrider-old) groups the column and unit classes together to apply their shared properties and values while seperating them for their unique width and margin properties. The demo uses the new version.
 
-[Demo](http://ellengummesson.com/projects/begrider/demo.html "A demo of Begrider")
-
 ## Usage
 
 ### The New Version
