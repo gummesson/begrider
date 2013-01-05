@@ -238,8 +238,9 @@ body {
   }
 
    /* Removes the gutter. */
-   [class^="column-"] {
-    margin-right: 0;  }
+  [class^="column-"] {
+    margin-right: 0;
+  }
 
 }
 
