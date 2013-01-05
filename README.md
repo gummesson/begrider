@@ -1,11 +1,9 @@
 # Begrider
-*Begrider* is a simple, fluid twelve column and ten units grid system with a 1140px fixed width. It works great in *Chrome*, *Firefox* and *Internet Explorer 9*. It works in *Opera* too if you don’t mind that some of the columns are a tiny bit off. The goal behind it was creating something that I could actually use and to make it as simple as possible. I think I did pretty good.
-
-Begrider comes in two different versions: The first one (begrider-new) uses attribute selectors to apply properties and values on all of the column and unit classes and to remove the gutter from the last column in the row. The second one (begrider-old) groups the column and unit classes together to apply their shared properties and values while seperating them for their unique width and margin properties. The demo uses the new version.
+*Begrider* is a simple, fluid twelve column and fourteen units grid system with a 1140px fixed width *(which can be changed without problems)*. The goal behind it was creating something that I could actually use and to make it as simple as possible.
 
 ## Usage
 
-### The New Version
+### Columns
 
     <div class="container">
     
@@ -13,11 +11,11 @@ Begrider comes in two different versions: The first one (begrider-new) uses attr
     
         <div class="row">
     
-          <div class="col-two"></div>
+          <div class="column-two"></div>
     
-            <div class="col-eight">Your content here...</div>
+            <div class="column-eight"><p>Lorem ipsum...</p></div>
     
-          <div class="col-two"></div>
+          <div class="column-two"></div>
     
         </div>
     
@@ -25,7 +23,7 @@ Begrider comes in two different versions: The first one (begrider-new) uses attr
     
     </div>
 
-### The Old Version
+#### With `.last` class for IE8 support:
 
     <div class="container">
     
@@ -33,22 +31,41 @@ Begrider comes in two different versions: The first one (begrider-new) uses attr
     
         <div class="row">
     
-          <div class="col-two"></div>
+          <div class="column-two"></div>
     
-            <div class="col-eight">Your content here...</div>
+            <div class="column-eight"><p>Lorem ipsum...</p></div>
     
-          <div class="col-two last"></div>
+          <div class="column-two last"></div>
     
         </div>
     
       </div>
+    
+    </div>
 
+### Units
+    
+    <div class="container">
+    
+      <div class="grid">
+    
+        <div class="row">
+    
+          <div class="unit-one-quarter"><p>Lorem ipsum...</p></div>
+    
+          <div class="unit-three-quarters"><p>Lorem ipsum...</p></div>
+    
+        </div>
+    
+      </div>
+    
     </div>
 
 ## License
 
-The MIT License (MIT)   
-Copyright (c) 2012 Ellen Gummesson
+**The MIT License (MIT)**
+
+*Copyright (c) 2012 Ellen Gummesson*
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

@@ -1,0 +1,254 @@
+/*==============
+    Begrider
+==============*/
+
+/*----------
+    Body
+/*--------*/
+
+/* Prevents padding and borders from breaking the grid (+IE8). */
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing   : border-box;
+  box-sizing        : border-box;
+}
+
+/*--------------------------
+   Container (.container)
+--------------------------*/
+
+/* Sets the container to a nearly full width so the grid doesn't hit the sides when the browser windows shrinks. */
+.container {
+  width : 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*----------------
+   Grid (.grid)
+----------------*/
+
+/* The maximum width of the grid. */
+.grid {
+  max-width: 1140px;
+  margin   : 0 auto;
+}
+
+/*--------------
+   Row (.row)
+--------------*/
+
+/* The micro clearfix (http://nicolasgallagher.com/micro-clearfix-hack/) */
+/* Prevent any overflowing content. */
+.row:before,
+.row:after {
+  content : "\0020";
+  display : block;
+  height  : 0;
+  overflow: hidden;
+}
+
+/* Clears the floating columns. */
+.row:after {
+  clear: both; 
+}
+
+  /* Applies the float and min-height to all of the .column- and .unit- classes. */
+  [class^="column-"],
+  [class^="unit-"] {
+    float     : left;
+    min-height: 1px;
+  }
+
+  /* Applies the margin-right/gutter to the .column- classes. */
+  [class^="column-"] {
+    margin-right: 2.85%;
+  }
+
+    /* == FOR +IE9 SUPPORT == */
+    /* Removes the margin-right/gutter on the last .column- class in the same .row. */
+    [class^="column-"]:last-child {
+      margin-right: 0;
+    }
+
+    /* == FOR +IE8 SUPPORT == */
+    /* Apply this after the last .column- class in the same .row. 
+       Example: <div class="column-seven last"></div>. */
+    .last {
+      margin-right: 0;
+    }
+
+/*----------------------
+   Columns (.column-)
+----------------------*/
+
+/* Twelve columns */
+.column-twelve {
+  width: 99.99%;
+  /* margin-right: 0; Uncommented this if you're using .last. */
+}
+
+/* Eleven columns */
+.column-eleven {
+  width: 91.42%;
+}
+
+/* Ten columns */
+.column-ten {
+  width: 82.85%;
+}
+
+/* Nine columns */
+.column-nine {
+  width: 74.28%;
+}
+
+/* Eight columns */
+.column-eight {
+  width: 65.71%;
+}
+
+/* Seven columns */
+.column-seven {
+  width: 57.14%;
+}
+
+/* Six columns */
+.column-six {
+  width: 48.57%;
+}
+
+/* Five columns */
+.column-five {
+  width: 40%;
+}
+
+/* Four columns */
+.column-four {
+  width: 31.43%;
+}
+
+/* Three columns */
+.column-three {
+  width: 22.86%;
+}
+
+/* Two columns */
+.column-two {
+  width: 14.29%;
+}
+
+/* One column */
+.column-one {
+  width: 5.72%;
+}
+
+/*------------------
+   Units (.unit-)
+------------------*/
+
+/* 100% wide */
+.unit-full-width {
+  width: 100%;
+}
+
+/* 90% wide */
+.unit-nine-tenths {
+  width: 90%;
+}
+
+/* 80% wide */
+.unit-four-fifths,
+.unit-eight-tenths {
+  width: 80%;
+}
+
+/* 75% wide */
+.unit-three-quarters {
+  width: 75%;
+}
+
+/* 70% wide */
+.unit-seven-tenths {
+  width: 70%;
+}
+
+/* 66.66% wide */
+.unit-two-thirds {
+  width: 66.66%;
+}
+
+/* 60% wide */
+.unit-three-fifths,
+.unit-six-tenths {
+  width: 60%;
+}
+
+/* 50% wide */
+.unit-half-width {
+  width: 50%;
+}
+
+/* 40% wide */
+.unit-two-fifths,
+.unit-four-tenths {
+  width: 40%;
+}
+
+/* 33.33% wide */
+.unit-one-third {
+  width: 33.33%;
+}
+
+/* 30% wide */
+.unit-three-tenths {
+  width: 30%;
+}
+
+/* 25% wide */
+.unit-one-quarter {
+  width: 25%;
+}
+
+/* 20% wide */
+.unit-one-fifth,
+.unit-two-tenths {
+  width: 20%;
+}
+
+/* 10% wide */
+.unit-one-tenth {
+  width: 10%;
+}
+
+
+/*--------------------------
+   Media Queries (@media)
+--------------------------*/
+
+/* iPad/Tablet (Portrait) */
+@media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* Makes all of the columns/units 100% in width. */
+  [class^="column-"],
+  [class^="unit-"] {
+    float     : none;
+    width     : 100%;
+    min-height: 0;
+  }
+
+   /* Removes the gutter. */
+   [class^="column-"] {
+    margin-right: 0;  }
+
+}
+
+/* iPhone/Smartphone (Landscape) */
+@media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* Adjusts the width for a smaller/narrower screen. */
+  .container {
+    width: 92.5%; 
+  }
+
+}
