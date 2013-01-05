@@ -1,5 +1,5 @@
 # Begrider
-*Begrider* is a simple, fluid twelve column and fourteen units grid system with a 1140px fixed width *(which can be changed without problems)*. The goal behind it was creating something that I could actually use and to make it as simple as possible.
+*Begrider* is a simple and fluid twelve column and fourteen units grid system with a 1140px fixed width, which can be changed without problems. It should work fine all modern web browsers and has an optional backward compatibility with IE8.
 
 ## Usage
 
