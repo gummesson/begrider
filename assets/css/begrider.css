@@ -13,9 +13,9 @@ body {
   box-sizing        : border-box;
 }
 
-/*--------------------------
-   Container (.container)
---------------------------*/
+/*----------------------------
+    Container (.container)
+----------------------------*/
 
 /* Sets the container to a nearly full width so the grid doesn't hit the sides when the browser windows shrinks. */
 .container {
@@ -24,9 +24,9 @@ body {
   margin: 0 auto;
 }
 
-/*----------------
-   Grid (.grid)
-----------------*/
+/*------------------
+    Grid (.grid)
+------------------*/
 
 /* The maximum width of the grid. */
 .grid {
@@ -34,12 +34,12 @@ body {
   margin   : 0 auto;
 }
 
-/*--------------
-   Row (.row)
---------------*/
+/*----------------
+    Row (.row)
+----------------*/
 
 /* The micro clearfix (http://nicolasgallagher.com/micro-clearfix-hack/) */
-/* Prevent any overflowing content. */
+/* Prevents any overflowing content. */
 .row:before,
 .row:after {
   content : "\0020";
@@ -48,7 +48,7 @@ body {
   overflow: hidden;
 }
 
-/* Clears the floating columns. */
+/* Clears the floating columns and units. */
 .row:after {
   clear: both; 
 }
@@ -73,14 +73,14 @@ body {
 
     /* == FOR +IE8 SUPPORT == */
     /* Apply this after the last .column- class in the same .row. 
-       Example: <div class="column-seven last"></div>. */
+       Example: <div class="column-seven last"></div>.            */
     .last {
       margin-right: 0;
     }
 
-/*----------------------
-   Columns (.column-)
-----------------------*/
+/*-----------------------
+    Columns (.column-)
+------------------------*/
 
 /* Twelve columns */
 .column-twelve {
@@ -143,9 +143,9 @@ body {
   width: 5.72%;
 }
 
-/*------------------
-   Units (.unit-)
-------------------*/
+/*--------------------
+    Units (.unit-)
+--------------------*/
 
 /* 100% wide */
 .unit-full-width {
@@ -221,9 +221,9 @@ body {
   width: 10%;
 }
 
-/*--------------------------
-   Media Queries (@media)
---------------------------*/
+/*----------------------------
+    Media Queries (@media)
+----------------------------*/
 
 /* iPad/Tablet (Portrait) */
 @media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
